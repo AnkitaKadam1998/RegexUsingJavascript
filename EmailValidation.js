@@ -1,6 +1,6 @@
-function EmailValidation1(email) 
+function EmailValidation2(email) 
 {
-   var pattern = RegExp('^[A-Z a-z 0-9]{3,}$');
+   var pattern = RegExp('^[A-Z a-z 0-9 .]+@[0-9 a-z A-Z]+$');
    if(pattern.test(email)){
       console.log("Valid EmailId!");
       return true;
@@ -11,5 +11,5 @@ function EmailValidation1(email)
    }
 }
 
-let emailId1 = 'abc';
-EmailValidation1(emailId1);
+let emailId2 = 'abc.xyz@bridgelabz';
+EmailValidation2(emailId2);
